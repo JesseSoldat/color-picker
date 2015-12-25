@@ -1,0 +1,16 @@
+.odd {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  color: darkgreen;
+  border: 2px solid black;
+}
+.even {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  color: darkpurple;
+  border: 2px solid black;
+}

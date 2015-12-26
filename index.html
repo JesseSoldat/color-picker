@@ -7,18 +7,27 @@
 </head>
 <body>
 <h2>Choose your background and text color</h2>
-<h4>Background Color:</h4><input type="color" name="c1" id="c1" value="#FFFFFF"/>
-<h4>Text Color:</h4><input type="color" name="c2" id="c2" value="#000000"/>
+<h4>Background Color:</h4>
+<input type="color" name="c1" id="c1" value="#FFFFFF"/>
+<h4>Text Color:</h4>
+<input type="color" name="c2" id="c2" value="#000000"/>
+<br>
+<h4>Date:</h4>
+<input type="date" id="field1">
+<h4>Time:</h4>
+<input type="time" id="field2">
 <br>
 <h4>How many boxes do you want?
 <br>
-<input type="number" id="num" min="1" maxlength="10" value="1" />
+<br>
+<input type="number" id="num" min="1" maxlength="20" value="1" />
 <br>
 <br>
-<input type="button" onClick="changeColor('c1','c2');pickNumber('num');" value="submit">
+<input type="button" onClick="changeColor('c1','c2');pickNumber('num');pickDate('field1','field2')" value="submit">
 <div id="anchor">
   
 </div>
+
 
 
 <script src="main.js"></script>

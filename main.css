@@ -1,3 +1,8 @@
+input {
+  margin: 0;
+  padding: .2%;
+
+}
 .odd {
   display: inline-block;
   width: 100px;
@@ -5,6 +10,7 @@
   background: lightblue;
   color: darkgreen;
   border: 2px solid black;
+  margin: .5%;
 }
 .even {
   display: inline-block;
@@ -13,4 +19,6 @@
   background: yellow;
   color: darkpurple;
   border: 2px solid black;
+  margin: .5%;
+
 }

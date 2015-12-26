@@ -12,6 +12,26 @@ function pickDate(date, time){
   var time = document.getElementById(time).value;
   console.log(date, time);
 }
+//Status Bar
+
+
+function getStatus(al) {
+  var bar = document.getElementById('progressBar');
+  var status = document.getElementById('status');
+  
+  status.innerHTML = al +'%';
+  bar.value = al;
+  al++
+  var loader = setTimeout("getStatus("+al+")", 20);
+  if(al == 100) {
+    status.innerHTML = "100%";
+    bar.value = 100;
+    clearTimeout(loader);
+    document.getElementById('finalMessage').innerHTML = "The file is ready";
+  }
+}
+var amountLoaded = 0;
+getStatus(amountLoaded);
 
 //Number of boxes
 var anchor = document.getElementById('anchor');
